@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatrice JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+    <div class="screen">
+        <div id="expression"></div>
+        <div id="result">0</div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="clearAll()">AC</button>
+        <button onclick="add('(')">(</button>
+        <button onclick="add(')')">)</button>
+        <button onclick="add('/')">÷</button>
+
+        <button onclick="add('7')">7</button>
+        <button onclick="add('8')">8</button>
+        <button onclick="add('9')">9</button>
+        <button onclick="add('*')">×</button>
+
+        <button onclick="add('4')">4</button>
+        <button onclick="add('5')">5</button>
+        <button onclick="add('6')">6</button>
+        <button onclick="add('-')">−</button>
+
+        <button onclick="add('1')">1</button>
+        <button onclick="add('2')">2</button>
+        <button onclick="add('3')">3</button>
+        <button onclick="add('+')">+</button>
+
+        <button onclick="add('0')">0</button>
+        <button onclick="add('.')">.</button>
+        <button onclick="backspace()">⌫</button>
+        <button class="equal" onclick="calculate()">=</button>
+    </div>
+</div>
+
+<div class="history">
+    <h3>Historique</h3>
+    <ul id="historyList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
